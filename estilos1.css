@@ -1,0 +1,234 @@
+article, aside, details, figcaption,figure, footer, header, hgroup, main, nav, picture, section, summary {
+display: block;
+margin: 0;
+padding: 0;
+}
+a {
+	text-decoration: none;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+margin: 0;
+padding: 0;
+}
+body {
+	font-family: 'Arial', sans-serif;
+	position: relative;
+}
+.cabecera {
+	background: #EEE;
+	border-bottom: 2px solid #CCC;
+	height: 50px;
+	position: relative;
+}
+.cabecera h1{
+	display: block;
+	line-height: 0;
+	margin: 0 0 0 50px;
+	width: 229px;
+}
+.cabecera h1 img {
+	height: 50px;
+}
+.nav {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding-right: 5px;
+}
+.nav ul {
+	list-style: none;
+}
+.nav ul li {
+	float: left;
+	font-size: 16px;
+}
+.nav ul li a {
+	display: block;
+	color: #666;
+	line-height: 50px;
+	height: 50px;
+	padding: 0 7px;
+}
+.nav ul li:hover a{
+	background: #FFF;
+	color: #22BCE0;
+}
+/*MENU*/
+.menu {
+	cursor: pointer;
+	cursor: hand;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.menu:hover {
+	background: #CCC;
+}
+.menu .menuul {
+	display: block;
+	background: #CCC;
+	top:100%;
+	left: -2000px;
+	position: absolute;
+}
+.menu:hover .menuul {
+	left: 0
+}
+.imenu {
+	background: url(file:///C:/Users/luis/Desktop/consejos/imagenes/menu.png) no-repeat 11px 11px;
+	display: block;
+	height: 50px;
+	width: 50px;
+}
+/*buscador*/
+.buscador {
+	position: absolute;
+	top: 0;
+	left: 279px;
+	z-index: 10;
+}
+.ibuscador {
+background: url(file:///C:/Users/luis/Desktop/consejos/imagenes/search.png) no-repeat 11px 11px;
+content: "";
+cursor: pointer;
+cursor: hand;
+display: block;
+right: -2000px;
+height: 50px;
+position: absolute;
+width: 50px;
+z-index: 10;
+}
+.adsense {
+	background: #FFF;
+	padding: 10px;
+}
+.adsense img{
+	display: block;
+	margin: 0 auto;
+	width: 728px;
+}
+/*.parte1 {
+	background: #EEE;
+	margin-top: 25px;
+	padding: 0 20px 20px 20px;
+	box-shadow: 
+		rgba(0, 0, 0, 0.3) 0 -3px 3px,
+		rgba(0, 0, 0, 0.3) 0 3px 3px;
+	position: relative;
+	text-align: center;
+}
+.parte1 h2 {
+	margin-bottom: 10px;
+	text-align: left;
+}
+.parte1 .calcula {
+	background-color: #0091C9;
+	border-radius: 5px;
+	color: #FFF;
+	cursor: pointer;
+	display: inline-block;
+	margin-right: 20px;
+	text-align: center;
+	padding: 5px;
+	vertical-align: top;
+	width: 200px;
+}
+.parte1 img {
+	width: 200px;
+}*/
+.post0 {
+	background: #EEE;
+	border-bottom: 2px solid #CCC;
+	border-top: 2px solid #CCC;
+	padding: 0 10px 10px 10px;
+}
+.post {
+	margin: 0 auto;
+	position: relative;
+}
+.post h2 {
+	font-size: 30px;
+	line-height: 30px;
+	text-align: center;
+	padding: 10px 0;
+}
+.post .post1 {
+	background: #FFF;
+	border-radius: 7px;
+	border-width: 1px 1px 1px 6px;
+	box-shadow: inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07);
+	color: #666;
+	/* float: right; */
+	margin-left: 330px;
+	min-width: 600px;
+	padding: 8px;
+	position: absolute;
+}
+.izquierda {
+	background: #FFF;
+	border-radius: 7px;
+	width: 300px;
+	padding: 10px;
+}
+@media screen and (max-width:1000px){
+	.cabecera  h1{
+		margin: 0 0 0 50px;
+	}
+	.nav {
+		padding-right: 55px;
+	}
+	.buscador{
+		right: -2000px;
+		left: inherit;
+	}
+	.ibuscador {
+		top: 0;
+		right: 0;
+	}
+}
+@media screen and (max-width:740px){
+	.cabecera  h1{
+		margin: 0 auto;
+	}
+	.nav {
+		display: none;
+	}
+}
+@media screen and (max-width:340px){
+	.cabecera {
+		height: 40px;
+	}
+	.cabecera h1 {
+		width: 183px;	
+	}
+	.cabecera h1 img{
+		height: 40px;
+	}
+	.ibuscador {
+		background: url(file:///C:/Users/luis/Desktop/consejos/imagenes/search.png) no-repeat 7px 7px;
+		height: 40px;
+		width: 40px;
+	}
+	.menu {
+		height: 40px;
+		width: 40px;
+	}
+	.imenu {
+		background: url(file:///C:/Users/luis/Desktop/consejos/imagenes/menu.png) no-repeat 7px 7px;
+		display: block;
+		height: 40px;
+		width: 40px;
+	}
+}
+@media screen and (max-width:300px){
+	.cabecera h1 {
+		padding-top: 5px;
+		width: 137px;	
+	}
+	.cabecera h1 img{
+		height: 30px;
+	}
+}

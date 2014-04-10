@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<meta charset=utf-8 />
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Picturefill</title>
+		<script type="text/javascript">
+
+		</script>
+		<script type="text/javascript">
+
+		</script>
+	<script src="http://scottjehl.github.io/picturefill/picturefill.js"></script>
+		<style>
+			body { font-family: sans-serif }
+			img {  max-width: 100% }
+		</style>
+	</head>
+	<body>
+
+		<h1>Picturefill: A &lt;picture&gt; element polyfill</h1>
+
+		<p>For more info: <a href="http://github.com/scottjehl/picturefill">see project home.</a></p>
+
+		<span data-picture data-alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
+			<span data-src="http://2.bp.blogspot.com/-J4ctNxCNtoI/UomKVNNHDDI/AAAAAAAAFQE/i5W1IvHSFFI/s200/huawei+ascend+p6.jpg"></span>
+			<span data-src="http://2.bp.blogspot.com/-J4ctNxCNtoI/UomKVNNHDDI/AAAAAAAAFQE/i5W1IvHSFFI/s320/huawei+ascend+p6.jpg" data-media="(min-width: 400px)"></span>
+			<span data-src="http://2.bp.blogspot.com/-J4ctNxCNtoI/UomKVNNHDDI/AAAAAAAAFQE/i5W1IvHSFFI/s400/huawei+ascend+p6.jpg" data-media="(min-width: 800px)"></span>
+			<span data-src="http://2.bp.blogspot.com/-J4ctNxCNtoI/UomKVNNHDDI/AAAAAAAAFQE/i5W1IvHSFFI/s1600/huawei+ascend+p6.jpg" data-media="(min-width: 1000px)"></span>
+
+			<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+			<noscript><img src="http://2.bp.blogspot.com/-J4ctNxCNtoI/UomKVNNHDDI/AAAAAAAAFQE/i5W1IvHSFFI/s200/huawei+ascend+p6.jpg" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia"></noscript>
+		</span>
+	</body>
+</html>

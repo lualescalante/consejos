@@ -1,0 +1,20 @@
+https://github.com/joshje/Responsive-Enhance
+https://github.com/scottjehl/picturefill
+http://code.medula.cl/article_Imagenes-responsivas-con-picturefill.html
+http://emiliocobos.net/editar-entradas-blogger-segun-etiquetas/
+
+
+https://github.com/kvendrik/responsive-images.js
+
+
+http://hogarblogger.blogspot.com/2012/09/otra-forma-de-colocar-entradas.html#.UxgWUfl5Om0
+
+http://2foros.com/entradas-relacionadas-con-miniaturas-para-blogger-3/
+
+http://www.queness.com/post/14256/10-powerful-responsive-lightboxes
+
+http://jedfoster.com/Readmore.js/
+
+https://support.google.com/webmasters/answer/156449?utm_source=webmasteracademy&utm_medium=web&utm_campaign=webmasteracademy
+
+29 requests  |  174?KB transferred  |  6.77?s (onload: 6.77?s, DOMContentLoaded: 4.84?s)

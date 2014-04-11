@@ -38,9 +38,13 @@ img {
 .limpiar {
 	clear: both;
 }
+.icon {
+	position: relative;
+}
 .icon:before {
 	display: block;
-	font-family: "icomoon"
+	font-family: "icomoon";
+	position: absolute;
 }
 .icon-home:before {
 	content: "\e5fd";
@@ -105,95 +109,21 @@ img {
 .icon-derecha:before {
 	content: "\e613";
 }
+.efecto-tran {
+	-webkit-transition-duration: .2s;
+	-moz-transition-duration: .2s;
+	-o-transition-duration: .2s;
+	transition-duration: .2s;
+}
 .cuerpo {
 	position: relative;
 	overflow: hidden;
 }
-.cabecera {
-	background: #FFF;
-	height: 50px;
-	position: relative;
-}
-.cabecera .h {
-	display: block;
-	line-height: 0;
-	width: 230px;
-	margin: 0 auto;
-}
-.cabecera .h img {
-	width: 230px;
-}
-.nav {
-	position: absolute;
-	top: 0;
-	right: 0;
-	padding-right: 5px;
-}
-.nav ul {
-	list-style: none;
-}
-.nav ul li {
-	float: left;
-	font-size: 16px;
-}
-.nav ul li a {
-	display: block;
-	color: #666;
-	line-height: 50px;
-	height: 50px;
-	padding: 0 7px;
-	position: relative;
-}
-.nav ul .nav-ini:before {
-	content: "\e5fd";
-	font-family: "icomoon";
-	font-size: 15px;
-	display:block;
-	position: absolute;
-	right: 100%;
-	top:50%;
-}
-.nav ul li:hover a{
-	background: #FFF;
-	color: #22BCE0;
-}
+/*CABECERA*/
+
 
 /*MENU*/
-.menu {
-	cursor: pointer;
-	cursor: hand;
-	height: 50px;
-	width: 50px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 20;
-}
-.menu:before {
-	content: "\e605";
-	font-family: "icomoon";
-	font-size: 32px;
-	color: #22BCE0;
-	display: block;
-	height: 40px;
-	line-height: 40px;
-	position: absolute;
-	top: 3px;
-	left: 8px;
-}
-.menu:hover {
-	background: #CCC;
-}
-.menu .menuul {
-	display: block;
-	background: #CCC;
-	top:100%;
-	left: -2000px;
-	position: absolute;
-}
-.menu:hover .menuul {
-	left: 0
-}
+
 /*.imenu {
 	background: url(file:///C:/Users/luis/Desktop/consejos/imagenes/menu.png) no-repeat 11px 11px;
 	display: block;
@@ -201,29 +131,7 @@ img {
 	width: 50px;
 }*/
 /*buscador*/
-.buscador {
-	background: #F1F1F1;
-	border: 1px solid #E4E4E4;
-	border-radius: 8px;
-	padding: 5px;
-	margin:5px 0 0 0;
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 55px;
-	z-index: 10;
-}
-.ibuscador {
-background: url(file:///C:/Users/luis/Desktop/consejos/imagenes/search.png) no-repeat 11px 11px;
-content: "";
-cursor: pointer;
-cursor: hand;
-display: none;
-height: 50px;
-position: absolute;
-width: 50px;
-z-index: 10;
-}
+
 .suscribirse {
 	background: #EEE;
 	border-top: none;
@@ -236,10 +144,40 @@ z-index: 10;
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
 	border-color: #000000;
 }
+/*.suscribirse:hover {
+	height: 70px;
+}*/
+.suscribirse:hover .share ul li {
+	margin-right: 40px;
+	overflow: visible;
+}
+.suscribirse:hover .share>ul>li>span {
+	display: block;
+}
+.share .suscribirse-text {
+	display: none;
+}
+.suscribirse:hover .suscribirse-text {
+	display: block;
+	font-size: 17px;
+	color: #22BCE0;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+.share small{
+	display: none;
+}
 #mc_embed_signup {
 	float: right;
 	height: 30px;
 	margin: 5px 0 0 0;
+}
+#mc_embed_signup .mc_embed_signup-text {
+	display: block;
+	font-size: 17px;
+	color: #22BCE0;
+	margin-bottom: 5px;
+	font-weight: bold;
 }
 #mc-embedded-subscribe-form {
 	position: relative;
@@ -280,9 +218,10 @@ width: 70px;
 	display: inline-block;
 	vertical-align: top;
 	position: relative;
-	margin-right: 40px;
+	overflow: hidden;
 }
 .share>ul>li>.icon {
+	background: #666;
 	border: 1px solid #CCC;
 	border-radius: 4px;
 	height: 20px;
@@ -298,29 +237,29 @@ width: 70px;
 	top: 2px;
 	left: 5px;
 }
-.share>ul>li>.icon-facebook{
+.share>ul>li>.icon-facebook:hover{
 	background: #305891;
 }
-.share>ul>li>.icon-twitter {
+.share>ul>li>.icon-twitter:hover {
 	background: #2ca8d2;
 }
-.share>ul>li>.icon-googleplus {
+.share>ul>li>.icon-googleplus:hover {
 	background: #FFF;
+}
+.share>ul>li>.icon-googleplus:hover:before {
 	color: #dd4b38;
 }
-.share>ul>li>.icon-googleplus:before {
-	color: #dd4b38;
-}
-.share>ul>li>.icon-pinterest {
+.share>ul>li>.icon-pinterest:hover {
 	background: #c11a22;
 }
-.share>ul>li>.icon-instagram {
+.share>ul>li>.icon-instagram:hover {
 	background: #517fa4;
 }
-.share>ul>li>.icon-youtube {
+.share>ul>li>.icon-youtube:hover {
 	background: #cc181e;
 }
 .share>ul>li>span{
+	display: none;
 	background: #FFF;
 	border: 1px solid #CCC;
 	border-radius: 3px;
@@ -651,16 +590,6 @@ width: 100%;
 	.nav {
 		padding-right: 55px;
 	}
-	.buscador{
-		display: none;
-		right: 50px;
-		left: inherit;
-	}
-	.ibuscador {
-		top: 0;
-		right: 0;
-		display: block;
-	}
 	.widget {
 		width: 100%;
 		text-align:center;
@@ -675,12 +604,7 @@ width: 100%;
 
 }
 @media screen and (max-width:740px){
-	.cabecera  .h {
-		margin: 0 auto;
-	}
-	.nav {
-		display: none;
-	}
+
 }
 @media screen and (max-width:640px){
 	.i {
@@ -688,34 +612,7 @@ width: 100%;
 	}
 }
 @media screen and (max-width:340px){
-	.cabecera {
-		height: 40px;
-	}
-	.cabecera .h {
-		width: 183px;	
-	}
-	.cabecera .h img{
-		height: 40px;
-	}
-	.ibuscador {
-		background: url(file:///C:/Users/luis/Desktop/consejos/imagenes/search.png) no-repeat 7px 7px;
-		height: 40px;
-		width: 40px;
-	}
-	.menu {
-		height: 40px;
-		width: 40px;
-	}
-	.imenu {
-		background: url(file:///C:/Users/luis/Desktop/consejos/imagenes/menu.png) no-repeat 7px 7px;
-		display: block;
-		height: 40px;
-		width: 40px;
-	}
+
 }
 @media screen and (max-width:300px){
-	.cabecera .h {
-		padding-top: 5px;
-		width: 137px;	
-	}
-	.cabecera .h img{
+

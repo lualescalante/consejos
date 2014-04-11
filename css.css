@@ -1,0 +1,185 @@
+
+.cabecera {
+	background: #FFF;
+	height: 50px;
+	position: relative;
+}
+.cabecera .h {
+	display: block;
+	line-height: 0;
+	width: 230px;
+	margin: 0 auto;
+}
+.cabecera .h img {
+	width: 230px;
+}
+/*******MENU NAV*******/
+.menu {
+	cursor: pointer;
+	cursor: hand;
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	top: 0;
+	left: 0;
+	z-index: 20;
+}
+.menu:before {
+	font-size: 28px;
+	color: #22BCE0;
+	line-height: 50px;
+	left: 11px;
+}
+.menu:hover {
+	background: #22BCE0;
+}
+.menu:hover:before {
+	color: #FFF;
+}
+.menu .menuul {
+	border:1px solid #CCC;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4), 0 0 0 transparent;
+	display: block;
+	background: #EEE;
+	top:100%;
+	left: -2000px;
+	position: absolute;
+	width: 200px;
+}
+.menu:hover .menuul {
+	left: 0;
+}
+.menu .menuul li {
+	padding: 5px;
+}
+.menu .menuul li:hover {
+	background: #22BCE0;
+}
+.menu .menuul li:hover a {
+	color: #FFF;
+}
+/******MENU 2*******/
+.menu-2 {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.menu-2 ul {
+	list-style: none;
+}
+.menu-2 ul li {
+	float: left;
+	font-size: 16px;
+}
+.menu-2 ul li a {
+	display: block;
+	color: #666;
+	line-height: 50px;
+	height: 50px;
+	padding: 0 7px;
+	margin-left: 20px;
+}
+.menu-2 ul li a:before {
+	right: 100%;
+}
+.menu-2 ul li:hover a{
+	color: #22BCE0;
+}
+/******BUSCADOR*******/
+.buscador {
+	background: #EEE;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	padding: 5px;
+	margin:5px 0 0 0;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 55px;
+	z-index: 10;
+}
+.ibuscador {
+	cursor: pointer;
+	cursor: hand;
+	display: none;
+	z-index: 10;
+}
+@media screen and (max-width:1000px){
+	.icon-50 {
+		height: 50px;
+		width: 50px;
+	}
+	.icon-50:hover {
+		background: #22BCE0;
+	}
+	.icon-50:before {
+	line-height: 50px;
+	left: 11px;
+	font-size: 28px;
+	color: #22BCE0;
+	}
+	.icon-50:hover:before {
+		color: #FFF;
+	}
+
+	.menu-2 ul li a span {
+		display: none;
+	}
+	.buscador{
+		display: none;
+		right: 50px;
+		left: inherit;
+	}
+	.ibuscador {
+		top: 0;
+		left: 50px;
+		display: block;
+		position: absolute;
+	}
+	.menu-2 ul li a {
+		padding: 0;
+		margin: 0;
+	}
+	.menu-2 ul li a:before {
+	right: inherit;
+	}
+}
+@media screen and (max-width:470px){
+	.cabecera {
+	height: 40px;
+	}
+	.cabecera .h {
+		width: 183px;
+	}
+	.cabecera .h img {
+		width: 183px;
+	}
+	.icon-50 {
+		height: 40px;
+		width: 40px;
+	}
+	.icon-50:before {
+		line-height: 40px;
+		left: 8px;
+		font-size: 24px;
+	}
+	.menu-2 ul li a {
+		height: 40px;
+	}
+	.ibuscador {
+	left: 40px;
+	}
+}
+@media screen and (max-width:470px){
+	.cabecera .h {
+		padding-top: 4px;
+		width: 148px;
+	}
+	.cabecera .h img {
+		width: 148px;
+	}
+
+}
+@media screen and (max-width:470px){
+
+}

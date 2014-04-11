@@ -5,6 +5,7 @@
 	<title>Consejos.tips</title>
 	<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figcaption,figure,footer,header,hgroup,mark,menu,meter,nav,output," + "picture,progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
 	<link rel="stylesheet" type="text/css" href="estilos.css">
+  <link rel="stylesheet" type="text/css" href="css.css">
 <style type="text/css">
    /* Magnific Popup CSS */
     .mfp-bg {
@@ -408,7 +409,7 @@ function NO(cual3) {
 <body>
 	<header class="cabecera">
 		<h1 class="h"><img alt="Gana.pe" src="file:///C:/Users/luis/Desktop/consejos/imagenes/consejo.png" /></h1>
-		<nav class="menu" id="menu1" onclick='SINO("menuul1");SIN("menu1")'>
+		<nav class="menu icon icon-menu icon-50" id="menu1" onclick='SINO("menuul1");SIN("menu1")'>
   			<!-- <span class="imenu"></span> -->
   			<ul class="menuul" id="menuul1">
   				<li><a href="">Comida y bebida</a></li>
@@ -426,26 +427,29 @@ function NO(cual3) {
   				<li><a href="">Salud y bienestar</a></li>
   			</ul>
 		</nav>
-		<div class="nav">
+		<div class="menu-2">
 			<ul>
-			<!-- <li class="nav-ini"><a href="">Inicio</a></li> -->
-			<li class="nav-pu"><a href="">Publicar o preguntar un consejo</a></li>
+			<li><a class="icon icon-home icon-50" href=""><span>Inicio</span></a></li>
+			<li><a class="icon icon-pluma icon-50" href=""><span>Publicar o preguntar un consejo</span></a></li>
 			</ul>
 		</div>
 	</header>
 <div class="suscribirse">
-    <div class="share">
+<!--     <div class="share">
+      <span class="suscribirse-text">Síguenos en nuestras redes sociales</span>
     <ul>
-      <li><a href="" class="icon icon-facebook"></a><span>132</span></li>
-      <li><a href="" class="icon icon-twitter"></a><span>45</span></li>
-      <li><a href="" class="icon icon-googleplus"></a><span>87</span></li>
-      <li><a href="" class="icon icon-pinterest"></a><span>35</span></li>
-      <li><a href="" class="icon icon-instagram"></a><span>1356</span></li>
-      <li><a href="" class="icon icon-youtube"></a><span>1654</span></li>
+      <li class="efecto-tran"><a href="" class="icon icon-facebook"></a><span>132</span></li>
+      <li class="efecto-tran"><a href="" class="icon icon-twitter"></a><span>45</span></li>
+      <li class="efecto-tran"><a href="" class="icon icon-googleplus"></a><span>87</span></li>
+      <li class="efecto-tran"><a href="" class="icon icon-pinterest"></a><span>35</span></li>
+      <li class="efecto-tran"><a href="" class="icon icon-instagram"></a><span>1356</span></li>
+      <li class="efecto-tran"><a href="" class="icon icon-youtube"></a><span>1654</span></li>
     </ul>
-  </div>
+    <small>Te enteraras de los mejores consejos</small>
+  </div> -->
 
   <div id="mc_embed_signup">
+<!--     <span class="mc_embed_signup-text">Suscríbete a nuestro boletín</span> -->
   <form action="http://tips.us8.list-manage.com/subscribe/post?u=58e75c7797be17f3ac757eedf&amp;id=6f886f6134" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
   <div class="mc-field-group">
     <label for="mce-EMAIL">Correo Electrónico</label>
@@ -592,7 +596,7 @@ function NO(cual3) {
 </div>
   <footer style="clear:both;">
   </footer>
-  <span class="ibuscador" id="ibuscador" onclick='NO("buscador");'></span>
+  <span class="ibuscador icon icon-buscar icon-50" id="ibuscador" onclick='NO("buscador");'></span>
 
 	<div class="buscador" id="buscador">
 			<input type="text" name="q" size="22" />
